@@ -1,0 +1,150 @@
+@keyframes slide {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+nav {
+  img {
+    height: 7rem;
+  }
+}
+
+.register-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .register-illustration img {
+    height: 40rem;
+    animation: slide 4s infinite linear;
+  }
+
+  .register-form form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+
+    .info {
+      padding-bottom: 4rem;
+      h1 {
+        font-size: 2.8rem;
+        letter-spacing: 0.05em;
+        padding-bottom: 1rem;
+      }
+
+      span {
+        font-size: 1.4rem;
+        color: #c4c4c4;
+      }
+    }
+
+    label {
+      font-weight: 500;
+      color: #c4c4c4;
+
+      letter-spacing: 0.05em;
+    }
+
+    .register-email-input {
+      margin: 3rem 0;
+    }
+
+    .register-password-input {
+      margin-bottom: 5rem;
+    }
+
+    .register-password-input,
+    .register-email-input,
+    .register-name-input {
+      position: relative;
+
+      label {
+        position: absolute;
+        top: -1.8rem;
+        left: 2%;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      span {
+        position: absolute;
+        bottom: 0.3rem;
+        left: 2rem;
+        font-size: 1.4rem;
+        transition: all 0.3s ease;
+      }
+
+      Input:focus + label span,
+      Input:valid + label span {
+        transform: translate(-40%, -75%);
+        font-size: 1.2rem;
+      }
+    }
+
+    span,
+    a {
+      font-weight: 500;
+      font-size: 1.2rem;
+
+      letter-spacing: 0.05em;
+
+      padding-top: 4rem;
+      text-align: center;
+    }
+
+    a {
+      color: #21bfc2;
+    }
+
+    .register-btn {
+      background-color: #21bfc2;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1070px) {
+  .register-main {
+    justify-content: center;
+
+    .register-illustration img {
+      display: none;
+    }
+
+    .register-form form {
+      padding-right: 0%;
+    }
+  }
+}
+
+@media (max-width: 431px) {
+  .register-main {
+    .register-form form {
+      Input {
+        height: 5rem;
+        width: 30rem;
+      }
+
+      .register-password-input,
+      .register-email-input,
+      .register-name-input {
+        label {
+          top: -1.2rem;
+        }
+      }
+    }
+  }
+}

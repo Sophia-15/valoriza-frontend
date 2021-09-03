@@ -1,0 +1,17 @@
+input {
+  outline: none;
+  border: 0.1rem solid #c4c4c4;
+  background: #0e0e0e;
+  width: 38rem;
+  height: 6rem;
+  padding: 0 0 0 2.5rem;
+  color: #fff;
+
+  border-radius: 2rem;
+
+  font-weight: 500;
+
+  &:focus {
+    border: 0.1rem solid #21bfc2;
+  }
+}
