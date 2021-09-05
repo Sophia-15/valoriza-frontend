@@ -12,7 +12,7 @@
   }
 }
 
-nav {
+.login-navbar {
   img {
     height: 7rem;
   }
@@ -105,10 +105,10 @@ nav {
 /*MEDIA QUERIES*/
 
 @media (max-width: 1070px) {
-  main {
+  .login-main {
     justify-content: center;
 
-    .illustration img {
+    .login-illustration img {
       display: none;
     }
 
@@ -119,7 +119,7 @@ nav {
 }
 
 @media (max-width: 431px) {
-  main {
+  .login-main {
     .login-form form {
       Input {
         height: 5rem;

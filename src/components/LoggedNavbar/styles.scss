@@ -1,0 +1,19 @@
+.logged-navbar {
+  img {
+    height: 7rem;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .pages {
+    display: flex;
+    gap: 2rem;
+    padding-right: 5%;
+    a {
+      color: #fff;
+      font-size: 1.6rem;
+    }
+  }
+}

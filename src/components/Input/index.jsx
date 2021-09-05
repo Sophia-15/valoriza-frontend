@@ -9,6 +9,8 @@ function Input(props) {
       className={props.className}
       name={props.name}
       required
+      onChange={props.onChange}
+      onClick={props.onClick}
     />
   );
 }

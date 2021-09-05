@@ -1,0 +1,32 @@
+.compliment-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6rem 0;
+
+  .compliment-input {
+    background: #1f1f1f;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100rem;
+    font-size: 1.4rem;
+    padding: 4rem 2.5rem;
+  }
+
+  .send-compliment {
+    padding: 0;
+    background: #21bfc2;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    width: 9rem;
+    height: 4rem;
+    margin-top: 2rem;
+    transform: translateX(45.5rem);
+
+    &:hover {
+      background: #64dee0;
+    }
+  }
+}

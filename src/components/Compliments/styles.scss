@@ -1,0 +1,45 @@
+.compliment-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .compliment {
+    width: 100rem;
+    height: auto;
+    padding: 3rem 2rem 1.5rem;
+    border-radius: 0.5rem;
+    background: #1f1f1f;
+    margin-bottom: 3rem;
+
+    .compliment-message {
+      padding: 0 0 3rem 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 3rem;
+      letter-spacing: 0.05rem;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .tag-name {
+        background: #232929;
+        color: #21bfc2;
+        font-size: 1.4rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+      }
+
+      .sender-name {
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+      }
+    }
+  }
+}
